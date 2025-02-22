@@ -1,0 +1,100 @@
+/* 
+ Create variables colors primary, secondary, using css variables
+*/
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+:root {
+  --color-primary: #003cbd;
+  --color-primary-20: #3b60b1;
+  --color-primary-40: #4096ff;
+  --color-secondary: #FADD03;
+  --color-secondary-20: #fbed84;
+  --color-secondary-40: #f8e7b0;
+  --color-gray: #E4E4E4;
+  --color-gray-20: #b1adad;
+  --color-gray-40: #d8d5d5;
+  --color-white: #FFFFFF;
+  --color-black: #2b2b2b;
+  --color-danger: #d90808;
+  --color-danger-20: #f33e3e;
+
+
+  font-family: "Roboto";
+  font-style: normal;
+
+  color-scheme: light dark;
+  color: #2b2b2b;
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+
+  a:hover {
+    color: #747bff;
+  }
+}
+
+.text-primary {
+  color: var(--color-primary);
+}
+
+.text-secondary {
+  color: var(--color-secondary);
+}
+
+.text-gray {
+  color: var(--color-gray);
+}
+
+.background-primary {
+  background-color: var(--color-primary);
+}
+
+.background-secondary {
+  background-color: var(--color-secondary);
+}
+
+.background-gray {
+  background-color: var(--color-gray);
+}
